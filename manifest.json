@@ -1,0 +1,32 @@
+{
+    "manifest_version" : 3,
+    "name" : "Last Minute Playlist",
+    "version" : "0.1.0",
+    "description" : "A basic chrome extension to save your last minute playlists with a simple click",
+
+    "icons" : {
+        "64" : "images/icon-64.png",
+        "128" : "images/icon-128.png"
+    },
+
+    "action" : {
+        "default_icon" : {
+            "64" : "images/icon-64.png"
+        },
+        "default_title" : "LMP",
+        "default_popup" : "popup/popup.html"
+    },
+
+    "background" : {
+        "service_worker" : "background.js",
+        "type" : "module"
+    },
+
+    "options_page" : "options/options.html",
+
+    "permissions" : [
+        "contextMenus",
+        "tabs",
+        "storage"
+    ]
+}
