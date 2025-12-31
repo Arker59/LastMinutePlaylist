@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playlists</title>
+  <meta charset="UTF-8">
+  <title>Playlists</title>
 </head>
 <body>
-    <h1>Voici la liste de vos playlists</h1>
-    <p>test 1</p>
+  <h1>Mes playlists</h1>
+
+  <input id="new-playlist-name" placeholder="Nouvelle playlist">
+  <button id="create-playlist">Créer</button>
+
+  <div style="display:flex; gap:40px; margin-top:20px;">
+    <ul id="playlists"></ul>
+
+    <div id="playlist-details">
+      <h2 id="playlist-title">Sélectionne une playlist</h2>
+      <ul id="playlist-items"></ul>
+    </div>
+  </div>
+
+  <script src="playlists.js"></script>
 </body>
 </html>
